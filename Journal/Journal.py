@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Class Representing a Journal which holds different types of JournalEntires"""
+"""Class Representing a Journal which holds different types of JournalEntries"""
 
 
 class Journal:
@@ -15,7 +15,9 @@ class Journal:
             mapped with entry names as keys and entry references as values.
         map_markers(dict): Dictionary of all journal entries which fall into the MapMarker classification,
             mapped with entry names as keys and entry references as values.
-        character_bios(dict): Dictionary of all journal entries which fall in the the CharacterBio classification,
+        character_bios(dict): Dictionary of all journal entries which fall into the the CharacterBio classification,
+            mapped with entry names as keys and entry references as values.
+        bestiary(dict): Dictionary of all journal entries which fall into the Bestiary classification,
             mapped with entry names as keys and entry references as values.
     """
 
@@ -27,6 +29,7 @@ class Journal:
         self.quest_entries = {}
         self.map_markers = {}
         self.character_bios = {}
+        self.bestiary = {}
 
     def add_quest_entry(self, entry):
         """
@@ -46,7 +49,7 @@ class Journal:
         Call the update method for the given entry
 
         :param entry:
-        :return:
+        :return: None
         """
 
     def add_map_marker(self, marker):
@@ -84,3 +87,6 @@ class Journal:
             classification.
         :return: None
         """
+
+        self.bestiary[entry.name] = entry
+        self.saved = False

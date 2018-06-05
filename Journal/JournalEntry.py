@@ -43,6 +43,8 @@ class JournalEntry:
 
     def read_entry_log(self, log):
         """
+        Function meant to be overwritten by inheriting classes, which will read the given log entry and
+            parse the data into an entry class instance.
 
         :param log: dictionary mapping entry details with the data structure used to hold that detail type.
             Logs are read for each entry upon opening a saved Journal.
