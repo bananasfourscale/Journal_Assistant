@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d14ec9f3-fcbb-4442-b99f-b366ef7554ce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Journal/Quest/MainQuest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Journal/Quest/Quest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Journal/Quest/__init__" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Journal/FileSystem/JournalFileLogger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Journal/FileSystem/__init__" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal/Journal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Journal/Journal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal/JournalEntry.py" beforeDir="false" afterPath="$PROJECT_DIR$/Journal/JournalEntry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Journal/Quest/Quest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Journal/Quest/Quest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,26 +21,40 @@
       <file leaf-file-name="Journal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Journal/Journal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+            <state relative-caret-position="1428">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JournalEntry.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JournalEntry.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Journal/JournalEntry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="51" column="11" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="33">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainQuest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="__init__" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Journal/FileSystem/__init__">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="JournalFileLogger.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Journal/FileSystem/JournalFileLogger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainQuest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Journal/Quest/MainQuest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state>
+              <caret selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -48,8 +62,8 @@
       <file leaf-file-name="Quest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Journal/Quest/Quest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="39" column="55" lean-forward="true" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+            <state relative-caret-position="374">
+              <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -63,6 +77,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>short_description</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,9 +94,16 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Journal/__init__.py" />
         <option value="$PROJECT_DIR$/Journal/Quest/MainQuest.py" />
-        <option value="$PROJECT_DIR$/Journal/JournalEntry.py" />
         <option value="$PROJECT_DIR$/Journal/Journal.py" />
+        <option value="$PROJECT_DIR$/FileSystem/__init__.py" />
+        <option value="$PROJECT_DIR$/FileSystem/JournalFileLogger" />
+        <option value="$PROJECT_DIR$/fileSystem/__init__.py" />
         <option value="$PROJECT_DIR$/Journal/Quest/Quest.py" />
+        <option value="$PROJECT_DIR$/fileSystem/journalFileLogger" />
+        <option value="$PROJECT_DIR$/Journal/FileSystem/__init__.py" />
+        <option value="$PROJECT_DIR$/Journal/FileSystem/JournaFileLogger" />
+        <option value="$PROJECT_DIR$/Journal/FileSystem/JournalFileLogger.py" />
+        <option value="$PROJECT_DIR$/Journal/JournalEntry.py" />
       </list>
     </option>
   </component>
@@ -111,7 +137,37 @@
               <item name="Journal_Assistant" type="b2602c69:ProjectViewProjectNode" />
               <item name="Journal_Assistant" type="462c0819:PsiDirectoryNode" />
               <item name="Journal" type="462c0819:PsiDirectoryNode" />
+              <item name="FileSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Journal_Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Journal_Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Journal" type="462c0819:PsiDirectoryNode" />
               <item name="Quest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Journal_Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Journal_Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Journal_Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Journal_Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="pyYAML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Journal_Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Journal_Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Journal_Assistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Journal_Assistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="yaml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,7 +178,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,6 +203,14 @@
       <option name="presentableId" value="Default" />
       <updated>1526524106763</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created basic framework for the Quest which is a inheriter of the journal entry base class. Also created file for the Main quest which in tern inherits from quest, but nothing is in there right now.">
+      <created>1528178624699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528178624699</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -162,18 +226,18 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49473685" visible="true" weight="0.084826134" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" visible="true" weight="0.068627454" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49329358" visible="true" weight="0.13272922" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" visible="true" weight="0.26906317" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50052685" side_tool="true" weight="0.12418301" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info id="Structure" order="1" sideWeight="0.50526315" side_tool="true" visible="true" weight="0.084826134" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" sideWeight="0.5067064" side_tool="true" visible="true" weight="0.13272922" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -184,7 +248,39 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created basic framework for the Quest which is a inheriter of the journal entry base class. Also created file for the Main quest which in tern inherits from quest, but nothing is in there right now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created basic framework for the Quest which is a inheriter of the journal entry base class. Also created file for the Main quest which in tern inherits from quest, but nothing is in there right now." />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Journal/Journal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/JournalEntry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="11" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="51" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/Quest/MainQuest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/Quest/Quest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Journal/Journal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -241,31 +337,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Journal/JournalEntry.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/pyYAML/pyyaml-master/pyyaml-master/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="51" column="11" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="51" selection-end-column="11" />
-        </state>
+        <state relative-caret-position="-1188" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Journal/Journal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Journal/Quest/Quest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="39" column="55" lean-forward="true" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        <state relative-caret-position="1428">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Journal/Quest/MainQuest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileSystem/journalFileLogger">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileSystem/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/Quest/Quest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/FileSystem/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/Quest/__init__">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/FileSystem/JournaFileLogger">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/FileSystem/__init__">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/FileSystem/JournalFileLogger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Journal/JournalEntry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

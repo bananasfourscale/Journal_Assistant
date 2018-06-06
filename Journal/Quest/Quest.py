@@ -14,26 +14,25 @@ class Quest(JournalEntry):
             CharacterBio which will house greater detail about the giver in question.
         location(str/CharacterBio): either a string giving the simple name of the location where the quest is located
             or a link to a MapMarker which will give more detailed information about the location.
-        short_description(str): a short one line description of the quest which can be used to easily remind oneself
-            of the goals of the quest.
+        phase_description(str): a short one line description of the quest phase which should be used as a marker of the
+            progress one has made so far in the given quest.
         full_description(str): a long form description of the aspects of the quest. The details of the full description
             can invoke some of the other class attributes to further describe the quest details.
     """
 
-    def __init__(self, quest_name, quest_giver, location, short_description, full_description):
+    def __init__(self, quest_name, quest_giver, location, phase_description, full_description):
         """
         Initialize a class instance and set up any default instance variables
         """
         super().__init__(quest_name)
         self.quest_giver = quest_giver
         self.location = location
-        self.short_description = short_description
-        self.full_description = self.short_description + "/r/n/t" + full_description
+        self.phase_description = phase_description
+        self.full_description = self.phase_description + "/r/n/t" + full_description
 
-    def update_entry(self, phase_description, full_update):
+    def update_entry(self, phase_description=None, full_update=None):
         """
-        Function meant to be overwritten by the inheriting classes, which will take in characteristic
-            info and use that to update the specific entry data.
+        Used to update the phase and/or full description of given quest instance.
         :param phase_description: string being used to create a new phase or step of a quest which is very similar to
             the quest short description.
         :param full_update: string which will be used to store the major details of the new phase of the quest by
@@ -41,26 +40,27 @@ class Quest(JournalEntry):
         :return: None
         """
         super().update_entry()
-        self.short_description = phase_description + "\n\r" + self.short_description
+        self.phase_description = phase_description + "\n\r" + self.phase_description
         self.full_description = phase_description + "\n\r\t" + full_update + "\n\r" + self.full_description
 
     def save_entry(self):
         """
-        Function meant to be overwritten by inheriting classes, which will collect all important entry
-            details and place them into a dictionary so that they can be saved. Will also set the updated
-            flag to false to inform the journal that this entry has been saved.
+        Create a log containing all the different attribute data which is found in a quest implementation, and call the
+            base JournalEntry class to store that data to the log file.
 
         :return: dict - dictionary mapping named entry characteristics with details about the set
             characteristic
         """
         self.updated = False
+        # TODO compile dictionary of the class attributes to be saved.
 
-    def read_entry_log(self, log):
+    def read_entry(self):
         """
-        Function meant to be overwritten by inheriting classes, which will read the given log entry and
-            parse the data into an entry class instance.
+        Reads the journal entry for the calling implementation of the Quest class by calling the base JournalEntry class
+            and passing itself as an argument. At the time of calling the class implementation should only be a shell
+            of the Quest class which contains the name of the reference. This information is then used by the
+            base class to obtain all the other Quest information and fill out the remaining attribute data.
 
-        :param log: dictionary mapping entry details with the data structure used to hold that detail type.
-            Logs are read for each entry upon opening a saved Journal.
         :return: None
         """
+        super().read_entry(entry=self)

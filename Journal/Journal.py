@@ -44,14 +44,6 @@ class Journal:
         self.quest_entries[entry.name] = entry
         self.saved = False
 
-    def update_quest_entry(self, entry):
-        """
-        Call the update method for the given entry
-
-        :param entry:
-        :return: None
-        """
-
     def add_map_marker(self, marker):
         """
         Add a new map marker to the journal. Map markers can be one a few different types including,

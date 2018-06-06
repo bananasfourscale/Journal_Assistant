@@ -17,7 +17,6 @@ class JournalEntry:
         """
         Initialize a class instance and set up any default instance variables
         """
-
         self.name = name
         self.updated = True
 
@@ -30,23 +29,25 @@ class JournalEntry:
         """
         self.updated = True
 
-    def save_entry(self):
+    def save_entry(self, log):
         """
         Function meant to be overwritten by inheriting classes, which will collect all important entry
             details and place them into a dictionary so that they can be saved. Will also set the updated
             flag to false to inform the journal that this entry has been saved.
 
-        :return: dict - dictionary mapping named entry characteristics with details about the set
-            characteristic
+        :param log: dictionary from inheriting sub class which this base class will store by calling the file logger.
+            This keeps the need for multiple repetitive imports of the logger from being required in all sub classes.
+        :return: dictionary mapping naming keys to all relevant data stored in the entry type.
         """
         self.updated = False
 
-    def read_entry_log(self, log):
+    def read_entry(self, entry):
         """
         Function meant to be overwritten by inheriting classes, which will read the given log entry and
             parse the data into an entry class instance.
 
-        :param log: dictionary mapping entry details with the data structure used to hold that detail type.
-            Logs are read for each entry upon opening a saved Journal.
-        :return: None
+        :param entry: instance of the inheriting class based on this JournalEntry, which will be used to read the
+            information from the logger class.
+        :return: dict - dictionary mapping named entry characteristics with details about the set
+            characteristic
         """
