@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Base Class representing all types of Journal Entires that can be added to the journal"""
+from Journal.FileSystem.JournalFileLogger import JournalFileLogger
 
 
 class JournalEntry:
@@ -9,16 +10,19 @@ class JournalEntry:
 
     Attributes:
         name(str): string which gives a characteristic name to help the user identify the entry
+        entry_type(str): string which is used to identify the class type of the entry so that when reading
+            the entry from a file or calling functions, the correct operations are performed.
         updated(bool): boolean indicator for determining if the entry has been updated recently
             and should be saved upon exit or call to save.
     """
 
-    def __init__(self, name):
+    def __init__(self, name, entry_type):
         """
         Initialize a class instance and set up any default instance variables
         """
         self.name = name
-        self.updated = True
+        self.entry_type = entry_type
+        self.__updated = True
 
     def update_entry(self):
         """
@@ -27,7 +31,7 @@ class JournalEntry:
 
         :return: None
         """
-        self.updated = True
+        self.__updated = True
 
     def save_entry(self, log):
         """
@@ -37,17 +41,8 @@ class JournalEntry:
 
         :param log: dictionary from inheriting sub class which this base class will store by calling the file logger.
             This keeps the need for multiple repetitive imports of the logger from being required in all sub classes.
-        :return: dictionary mapping naming keys to all relevant data stored in the entry type.
+        :return: None
         """
-        self.updated = False
+        self.__updated = False
+        JournalFileLogger.save_log_entry(log)
 
-    def read_entry(self, entry):
-        """
-        Function meant to be overwritten by inheriting classes, which will read the given log entry and
-            parse the data into an entry class instance.
-
-        :param entry: instance of the inheriting class based on this JournalEntry, which will be used to read the
-            information from the logger class.
-        :return: dict - dictionary mapping named entry characteristics with details about the set
-            characteristic
-        """
